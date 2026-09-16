@@ -30,6 +30,23 @@ public class Pizza {
         }
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String[] getIngredientes() {
+        String[] copia = new String[ingredientes.length];
+        for (int i = 0; i < ingredientes.length; i++) {
+            copia[i] = ingredientes[i];
+        }
+        return copia;
+    }
+
+    @Override
+    public String toString() {
+        return nombre + " [" + ingredientes[0] + ", " + ingredientes[1] + ", " + ingredientes[2] + "]";
+    }
+
 }
 
 
