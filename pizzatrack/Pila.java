@@ -1,4 +1,4 @@
-package PizzaTrack;
+package pizzatrack;
 
 /** Pila manual basada en una lista ligada simple. */
 public class Pila {

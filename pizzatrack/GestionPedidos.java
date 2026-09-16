@@ -1,4 +1,4 @@
-package PizzaTrack;
+package pizzatrack;
 
 /** Coordina las pilas de pedidos activos y pedidos deshechos. */
 public class GestionPedidos {

@@ -1,4 +1,4 @@
-package PizzaTrack;
+package pizzatrack;
 
 /** Nodo enlazado que guarda una pizza y apunta al nodo anterior de la pila. */
 class Nodo {

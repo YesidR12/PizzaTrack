@@ -1,4 +1,4 @@
-package PizzaTrack;
+package pizzatrack;
 
 import java.util.Scanner;
 
