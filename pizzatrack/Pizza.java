@@ -1,6 +1,6 @@
 package pizzatrack;
 
-/** Representa un pedido de pizza con exactamente tres ingredientes. */
+/*  pedido de pizza con exactamente tres ingredientes. */
 public class Pizza {
     private final String nombre;
     private final String[] ingredientes;

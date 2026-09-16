@@ -2,7 +2,7 @@ package pizzatrack;
 
 import java.util.Scanner;
 
-/** Punto de entrada para operar Pizza-Track desde la consola. */
+/* Clase principal para ejecutar la consola de Pizza-Track.*/
 public class Main {
     public static void main(String[] args) {
         GestionPedidos gestion = new GestionPedidos();

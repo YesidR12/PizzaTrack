@@ -1,18 +1,18 @@
 package pizzatrack;
 
-/** Coordina las pilas de pedidos activos y pedidos deshechos. */
+/* Coordina las pilas de pedidos activos y pedidos deshechos. */
 public class GestionPedidos {
     private final Pila pedidosActivos = new Pila();
     private final Pila pedidosDeshechos = new Pila();
 
-    /** Registra una pizza y comienza una nueva rama del historial. */
+    /* Registra una pizza y comienza un nuevo registro del historial. */
     public void registrar(Pizza pizza) {
         pedidosActivos.push(pizza);
-        // Un registro nuevo invalida los redo anteriores, como en un editor.
+        //Si se agrega un nuevo cambio, la lista de rehacer se limpia .
         pedidosDeshechos.clear();
     }
 
-    /** Mueve el pedido activo mas reciente a la pila secundaria. */
+    /* Mueve el pedido activo mas reciente a la pila secundaria. */
     public Pizza deshacer() {
         Pizza pizza = pedidosActivos.pop();
         if (pizza != null) {

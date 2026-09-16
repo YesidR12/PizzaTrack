@@ -1,11 +1,11 @@
 package pizzatrack;
 
-/** Pila manual basada en una lista ligada simple. */
+/* Pila manual usando una lista enlazada simple para gestionar las pizzas. */
 public class Pila {
     private Nodo tope;
     private int tamanio;
 
-    /** Inserta una pizza en el tope y actualiza el enlace principal. */
+    /* Inserta una pizza en el tope y actualiza el enlace principal. */
     public void push(Pizza pizza) {
         if (pizza == null) {
             throw new IllegalArgumentException("No se puede apilar una pizza nula.");
@@ -16,7 +16,7 @@ public class Pila {
         tamanio++;
     }
 
-    /** Retira y devuelve la pizza que ocupa el tope. */
+    /* Retira y devuelve la pizza que ocupa el tope. */
     public Pizza pop() {
         if (isEmpty()) {
             return null;
@@ -29,7 +29,7 @@ public class Pila {
         return pizza;
     }
 
-    /** Consulta el tope sin modificar la lista. */
+    /* Consulta el tope sin modificar la lista. */
     public Pizza peek() {
         if (isEmpty()) {
             return null;
@@ -45,7 +45,7 @@ public class Pila {
         return tamanio;
     }
 
-    /** Elimina todos los nodos de la pila. */
+    /* Elimina todos los nodos de la pila. */
     public void clear() {
         tope = null;
         tamanio = 0;
